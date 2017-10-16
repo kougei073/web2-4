@@ -4799,17 +4799,3 @@ document.addEventListener('init', function(event) {
     page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
   }
 });
-
-var login = function() {
-  var username = document.getElementById('username').value;
-  var password = document.getElementById('password').value;
-
-  if (username === 'bob' && password === 'secret') {
-    ons.notification.alert('Congratulations!');
-  }
-  else {
-    ons.notification.alert('Incorrect username or password.');
-  }
-};
-
-//# sourceMappingURL=react-onsenui.js.map
