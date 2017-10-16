@@ -13,22 +13,30 @@
  <script src="js/onsenui.min.js"></script>
  <script src="js/react-onsenui.js"></script>
 
-  <!-- Prerequisite=This example use ionicons(http://ionicons.com) to display icons. -->
-<div class="navigation-bar">
-  <div class="navigation-bar__left">
-    <span class="toolbar-button--outline">
-      <i class="ion-navicon" style="font-size:32px; vertical-align:-6px;"></i>
-    </span>
-  </div>
+  <ons-navigator swipeable id="myNavigator" page="page1.html"></ons-navigator>
 
-  <div class="navigation-bar__center">
-    タイトル
-  </div>
+<template id="page1.html">
+  <ons-page id="page1">
+    <ons-toolbar>
+      <div class="center">Page 1</div>
+    </ons-toolbar>
 
-  <div class="navigation-bar__right">
-    <span class="toolbar-button--outline">Button</span>
-  </div>
-</div>
+    <p>This is the first page.</p>
 
+    <ons-button id="push-button">Push page</ons-button>
+  </ons-page>
+</template>
+
+<template id="page2.html">
+  <ons-page id="page2">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>Page 1</ons-back-button></div>
+      <div class="center"></div>
+    </ons-toolbar>
+
+    <p>This is the second page.</p>
+  </ons-page>
+</template>
+  
  </body>
 </html>
